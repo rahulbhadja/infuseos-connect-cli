@@ -1,5 +1,5 @@
 {
-  "name": "infuse-connect",
+  "name": "infuseos-connect-cli",
   "version": "0.1.0",
   "private": true,
   "type": "module",
