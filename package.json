@@ -1,0 +1,25 @@
+{
+  "name": "infuse-connect",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "cli connector for infuseOS remote machine execution",
+  "bin": {
+    "infuse-connect": "./bin/infuse-connect.mjs"
+  },
+  "scripts": {
+    "start": "node ./bin/infuse-connect.mjs",
+    "check": "node --check ./bin/infuse-connect.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "infuseOS",
+    "cli",
+    "connector",
+    "agent",
+    "ssh"
+  ],
+  "license": "MIT"
+}
