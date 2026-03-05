@@ -1,18 +1,27 @@
 {
-  "name": "infuseos-connect-cli",
+  "name": "infuse-connect",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "cli connector for infuseOS remote machine execution",
   "bin": {
     "infuse-connect": "./bin/infuse-connect.mjs"
   },
+  "files": ["dist", "bin", "README.md", "LICENSE", "package.json"],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
+    "build": "tsc -p tsconfig.json",
     "start": "node ./bin/infuse-connect.mjs",
-    "check": "node --check ./bin/infuse-connect.mjs"
+    "check": "node --check ./bin/infuse-connect.mjs",
+    "prepublishOnly": "npm run build && npm run check"
   },
   "engines": {
     "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.31",
+    "typescript": "^5.9.2"
   },
   "keywords": [
     "infuseOS",
